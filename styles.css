@@ -1,0 +1,249 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    }
+  /* Display Button Styling */
+    .topLeft {
+    position: relative; /* Add this to ensure relative positioning within this container */
+    /* width: 20%; This ensures that the container only takes as much space as needed */
+    margin: 0 auto; /* Center the container if that's still desired */
+    /* display: inline-flexbox; */
+    }
+    .display-button {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    overflow: visible;
+    }
+    .dropdown {
+    display: none; /* Initial state - you will toggle this with JS */
+    position: absolute relative;
+    top: 100%;
+    border: '1px solid red';
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 20%; 
+    z-index: 1000;
+  }
+  
+  .dropdown.open {
+    display: block;
+  }
+  
+  .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dropdown-item:last-child {
+    border-bottom: none;
+  }
+  
+  .icon {
+    flex-shrink: 0;
+  }
+  
+  .text-center {
+    flex: 1;
+    text-align: center;
+  }
+  
+  
+  /* Display Button Styling */
+  .card-id{
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+  }
+  .card-title{
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .tag-button {
+    align-self: flex-start; /* Aligns the button to the start of the flex container */
+    margin-right: auto; /* Pushes the button to the left if the parent is flex */
+    /* Add any additional styling as needed */
+  }
+  
+  .kanban-board {
+    display: flex;
+    background-color: #f4f5f7;
+  }
+  
+  .kanban-column {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #f4f5f7;
+    border-radius: 4px;
+  }
+  
+  .kanban-card {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 0 rgba(9,30,66,.25);
+  }
+  
+  /* DropDown Buttons*/
+  .display-button-container {
+    position: relative;
+  }
+  
+  .display-button {
+    /* Style your main button here */
+    cursor: pointer;
+    background-color: #fff;
+    height: 30px;
+    width: 100%;
+    padding: 0px;
+    /* ... other styles ... */
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%; /* Adjust as necessary */
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: none; /* Hide the dropdown initially */
+    z-index: 1000;
+  }
+  
+  .display-button-container:hover .dropdown {
+    display: block; /* Show the dropdown on hover */
+  }
+  
+  .dropdown-button {
+    /* Style your dropdown button here */
+    cursor: pointer;
+    /* ... other styles ... */
+  }
+  
+  .dropdown-option {
+    /* Style for each dropdown option */
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .selected-option {
+    font-weight: bold;
+  }
+  
+  
+  .dropdown-container {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 200px;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .dropdown-button {
+    border: none;
+    background: #f0f0f0;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  
+  .dropdown-label {
+    font-weight: bold;
+  }
+  
+  .option {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .option:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .options-container {
+    background: #fff;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    border-left: 1px solid #ccc;
+  }
+  
+  .icon.rotate {
+    transform: rotate(90deg);
+  }
+  
+  .icon.up {
+    transform: rotate(180deg);
+  }
+  
+  
+  /* Footer */
+  
+  .footer {
+    background-color: white;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Align the content vertically */
+    padding: 20px;
+    box-shadow: 0 -1px 4px 0 rgba(0,0,0,0.1);
+  }
+  
+  /* .footer-left {
+    /* No flex value here, it will take the width of its content }*/
+  
+  .footer-left,.footer-right {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center the content vertically */
+  }
+  
+  /* Container for both left and right parts of the footer to center them as a unit */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Take the full width of the footer */
+    max-width: 1100px; /* Adjust max-width as needed to prevent the footer from getting too wide */
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .information-section {
+    text-align: center;
+  }
+  
+  .information-section a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .information-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Add back your media query if necessary */
